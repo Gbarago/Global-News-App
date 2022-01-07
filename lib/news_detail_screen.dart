@@ -66,13 +66,17 @@ class NewsDetailScreen extends StatelessWidget {
                 ),
               ),
               SizedBox(height: height * 0.03),
-              Container(
-                padding: EdgeInsets.all(10),
-                width: width * 0.95,
-                child: Text('$dsc',
-                    style: const TextStyle(
-                        color: Colors.white, fontSize: 16, height: 1.8),
-                    textAlign: TextAlign.justify),
+              Expanded(
+                child: SingleChildScrollView(
+                  child: Container(
+                    padding: EdgeInsets.all(10),
+                    width: width * 0.95,
+                    child: Text('$dsc',
+                        style: const TextStyle(
+                            color: Colors.white, fontSize: 16, height: 1.8),
+                        textAlign: TextAlign.justify),
+                  ),
+                ),
               )
             ],
           ),
